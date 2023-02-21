@@ -1,7 +1,5 @@
 const AlertButton = () => {
-    const handleClick = () => {
-        alert("Clicked!");
-    }
+    const handleClick = () => alert("Clicked!");
     return (
         <div className="flex justify-center mt-10">
             <button 
