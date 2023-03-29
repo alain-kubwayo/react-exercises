@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css';
+import HelloWorld from "./components/HelloWorld";
 import AlertButton from "./components/AlertButton";
 import Navbar from "./components/Navbar";
 import ButtonsContainer from "./components/ButtonsContainer";
@@ -14,6 +15,7 @@ function App() {
     <BrowserRouter>
       <Navbar />
       <Routes>
+        <Route path="/hello-world" element={<HelloWorld />} />
         <Route path="/" element={(<h1>Welcome</h1>)} />
         <Route path="/capture-user-clicks" element={<AlertButton /> } />
         <Route path="/custom-component" element={<ButtonsContainer />} />
