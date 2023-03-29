@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css';
+import AlertButton from "./components/AlertButton";
 import Navbar from "./components/Navbar";
 import ButtonsContainer from "./components/ButtonsContainer";
 import Counter from "./components/Counter";
@@ -13,6 +14,8 @@ function App() {
     <BrowserRouter>
       <Navbar />
       <Routes>
+        <Route path="/" element={(<h1>Welcome</h1>)} />
+        <Route path="/capture-user-clicks" element={<AlertButton /> } />
         <Route path="/custom-component" element={<ButtonsContainer />} />
         <Route path="/counter" element={(<Counter />)} />
         <Route path="/imperative-animal-list" element={(<Animals />)} />
