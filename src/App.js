@@ -6,7 +6,6 @@ import Animals from "./components/Animals";
 import AnimalsList from "./components/AnimalsList";
 import Form from "./components/Form";
 import Jokes from "./components/Jokes";
-import Navbar from "./components/Navbar";
 
 function App() {
   return (
