@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css';
 import Navbar from "./components/Navbar";
+import ButtonsContainer from "./components/ButtonsContainer";
 import Counter from "./components/Counter";
 import Animals from "./components/Animals";
 import AnimalsList from "./components/AnimalsList";
@@ -12,6 +13,7 @@ function App() {
     <BrowserRouter>
       <Navbar />
       <Routes>
+        <Route path="/custom-component" element={<ButtonsContainer />} />
         <Route path="/counter" element={(<Counter />)} />
         <Route path="/imperative-animal-list" element={(<Animals />)} />
         <Route path="/animal-list" element={<AnimalsList />} />
